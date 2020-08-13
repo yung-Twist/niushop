@@ -1,0 +1,78 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}
+	    ,{
+            "path" : "pages/product/product",
+            "style" : {
+				"navigationBarTitleText": "产品"
+			}
+        }
+        ,{
+            "path" : "pages/material/material",
+            "style" : {
+				"navigationBarTitleText": "素材"
+			}
+        }
+        ,{
+            "path" : "pages/store/store",
+            "style" : {
+				"navigationBarTitleText": "店铺"
+			}
+        }
+        ,{
+            "path" : "pages/team/team",
+            "style" : {
+				"navigationBarTitleText": "团队"
+			}
+        }
+        ,{
+            "path" : "pages/category/category",
+            "style" : {
+				"navigationBarTitleText": "分类"
+			}
+        }
+        ,{
+            "path" : "pages/shopCart/shopCart",
+            "style" : {
+				"navigationBarTitleText": "购物车"
+			}
+        }
+        ,{
+            "path" : "pages/mine/mine",
+            "style" : {
+				"navigationBarTitleText": "我的"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "niushop",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#999999",
+	    "selectedColor": "#2A6CDC",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [
+			{
+				"pagePath": "pages/index/index"
+			},
+			{
+				"pagePath":"pages/category/category"
+			},
+			{
+				"pagePath": "pages/shopCart/shopCart"
+			},
+			{
+				"pagePath": "pages/mine/mine"
+			}
+		]
+	}
+}
