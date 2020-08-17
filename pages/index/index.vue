@@ -20,7 +20,7 @@
 		
 		<!-- 秒杀 砍价 -->
 		<view class="home-buyType">
-			<view class="buytype-item" v-for="(item, index) in buyTypeList" :key="index">
+			<view class="buytype-item" v-for="(item, index) in buyTypeList" :key="index" @click="toItemPath(item)">
 				<image :src="item.icon" mode="" class="type-icon"></image>
 				<text class="type-title">{{item.title}}</text>
 			</view>
@@ -77,17 +77,17 @@
 				buyTypeList:[
 					{
 						title:'秒杀',
-						route:'',
+						route:'/pages/index/second/second',
 						icon:require('@/static/images/second.png')
 					},
 					{
 						title:'砍价',
-						route:'',
+						route:'/pages/index/bargain/bargain',
 						icon:require('@/static/images/bargain.png')
 					},
 					{
 						title:'拼团',
-						route:'',
+						route:'/pages/index/group/group',
 						icon:require('@/static/images/group.png')
 					},
 					{
@@ -133,6 +133,12 @@
 		},
 		methods: {
 			search(){
+			},
+			// 秒杀,拼团...
+			toItemPath(item){
+				uni.navigateTo({
+					url:item.route
+				})
 			}
 		}
 	}

@@ -72,5 +72,6 @@
 	width: 100vw;
 	bottom: 0;
 	left: 0;
+	z-index: 999;
 }
 </style>

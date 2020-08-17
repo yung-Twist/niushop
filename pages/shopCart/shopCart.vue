@@ -5,7 +5,7 @@
 				<view class="cart-store-item" v-for="(item, index) in cartList" :key="index">
 					<view class="cart-store-header">
 						<view class="cart-store-left">
-							<checkbox class='round blue' :value="index"></checkbox>
+							<checkbox class='round blue' :value="index" style="zoom:80%;"></checkbox>
 							<image src="../../static/tarabr/storeA.png" mode="" class="store-icon"></image>
 							<text class="store-name">{{item.storeName}}</text>
 						</view>
@@ -14,7 +14,7 @@
 					<view class="cart-store-goods">
 						<checkbox-group class="block" @change="CheckboxGoodsChange">
 							<view class="cart-store-goods-item" v-for="(item2, idnex2) in item.cartList" :key="index2">
-								<checkbox class='round blue' :value="item2.id"></checkbox>
+								<checkbox class='round blue' :value="item2.id" style="zoom:80%;"></checkbox>
 								<view class="cart-goods-info">
 									<image :src="item2.imagePath" mode="" class="cart-goods-image"></image>
 									<view class="cart-goods-detail">
