@@ -58,7 +58,15 @@
 						<view class="title-line"></view>
 					</view>
 				</view>
+				<!-- 常用工具列表 -->
+				<view class="tools-list">
+					<view class="tools-item" v-for="(item, index) in toolList" :key="index" :style="{background:item.bgColor}">
+						<image :src="item.iconPath" mode=""></image>
+						<text>{{item.name}}</text>
+					</view>
+				</view>
 			</view>
+			<view class="block" style="height: 10vh;"></view>
 		</view>
 		<Tarbar :route="route"/>
 	</view>
@@ -132,7 +140,7 @@
 						id:6,
 						name:'我的拼团',
 						iconPath:require('@/static/images/mygroup.png'),
-						bgColor:'#D4E2F8'
+						bgColor:'#F5E6E3'
 					},
 					{
 						id:7,
@@ -374,6 +382,30 @@
 						font-style:italic;
 						color:#2B6FDD;
 						margin: 0 50upx;
+					}
+				}
+			}
+			.tools-list{
+				width: 690upx;
+				display: grid;
+				grid-template-columns: repeat(3,230upx);
+				grid-template-rows: repeat(4,230upx);
+				background:rgba(212,226,248,1);
+				box-shadow:1upx 10upx 20upx 0upx rgba(42,108,220,0.3);
+				border-radius:30upx;
+				overflow: hidden;
+				.tools-item{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					image{
+						width: 70upx;
+						height: 70upx;
+					}
+					text{
+						font-size:24upx;
+						color:rgba(52,52,52,1);
 					}
 				}
 			}

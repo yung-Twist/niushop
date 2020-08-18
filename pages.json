@@ -9,7 +9,7 @@
 	    ,{
             "path" : "pages/product/product",
             "style" : {
-				"navigationBarTitleText": "产品"
+				"navigationBarTitleText": "产品分享"
 			}
         }
         ,{
