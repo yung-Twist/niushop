@@ -92,7 +92,7 @@
 					},
 					{
 						title:'积分商城',
-						route:'',
+						route:'/pages/index/integralstore/integralstore',
 						icon:require('@/static/images/integral.png')
 					}
 				],

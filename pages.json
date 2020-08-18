@@ -66,6 +66,12 @@
 				"navigationBarTitleText": "拼团商品"
 			}
         }
+        ,{
+            "path" : "pages/index/integralstore/integralstore",
+            "style" : {
+				"navigationBarTitleText": "积分商城"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
