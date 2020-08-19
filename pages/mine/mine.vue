@@ -60,7 +60,7 @@
 				</view>
 				<!-- 常用工具列表 -->
 				<view class="tools-list">
-					<view class="tools-item" v-for="(item, index) in toolList" :key="index" :style="{background:item.bgColor}">
+					<view class="tools-item" v-for="(item, index) in toolList" :key="index" :style="{background:item.bgColor}" @click="toToolsPage(item)">
 						<image :src="item.iconPath" mode=""></image>
 						<text>{{item.name}}</text>
 					</view>
@@ -110,61 +110,71 @@
 						id:1,
 						name:'签到',
 						iconPath:require('@/static/images/sign.png'),
-						bgColor:'#94B5ED'
+						bgColor:'#94B5ED',
+						route:'/pages/mine/addressList/addressList'
 					},
 					{
 						id:2,
 						name:'收藏',
 						iconPath:require('@/static/images/star.png'),
-						bgColor:'#D4E2F8'
+						bgColor:'#D4E2F8',
+						route:'/pages/mine/favorites/favorites'
 					},
 					{
 						id:3,
 						name:'个人资料',
 						iconPath:require('@/static/images/userInfo.png'),
-						bgColor:'#D5D6F0'
+						bgColor:'#D5D6F0',
+						route:'/pages/mine/userInfo/userInfo'
 					},
 					{
 						id:4,
 						name:'收货地址',
 						iconPath:require('@/static/images/address.png'),
-						bgColor:'#D4E2F8'
+						bgColor:'#D4E2F8',
+						route:'/pages/mine/addressList/addressList'
 					},
 					{
 						id:5,
 						name:'积分商城',
 						iconPath:require('@/static/images/integralstore.png'),
-						bgColor:'#94B5ED'
+						bgColor:'#94B5ED',
+						route:'/pages/mine/addressList/addressList'
 					},
 					{
 						id:6,
 						name:'我的拼团',
 						iconPath:require('@/static/images/mygroup.png'),
-						bgColor:'#F5E6E3'
+						bgColor:'#F5E6E3',
+						route:'/pages/mine/addressList/addressList'
 					},
 					{
 						id:7,
 						name:'我的秒杀',
 						iconPath:require('@/static/images/mysecond.png'),
-						bgColor:'#D5D6F0'
+						bgColor:'#D5D6F0',
+						route:'/pages/mine/addressList/addressList'
 					},
 					{
 						id:8,
 						name:'我的砍价',
 						iconPath:require('@/static/images/mybargain.png'),
-						bgColor:'#D4E2F8'
+						bgColor:'#D4E2F8',
+						route:'/pages/mine/addressList/addressList'
 					},
 					{
 						id:9,
 						name:'客服中心',
 						iconPath:require('@/static/images/service.png'),
-						bgColor:'#D5D6F0'
+						bgColor:'#D5D6F0',
+						route:'/pages/mine/addressList/addressList'
 					},
 					{
 						id:10,
 						name:'百科',
 						iconPath:require('@/static/images/baike.png'),
-						bgColor:'#D4E2F8'
+						bgColor:'#D4E2F8',
+						route:'/pages/mine/addressList/addressList'
 					},
 					{
 						bgColor:'#94B5ED'
@@ -179,6 +189,13 @@
 		onLoad() {
 			let routes = getCurrentPages();
 			this.route = routes[routes.length - 1].route
+		},
+		methods:{
+			toToolsPage(item){
+				uni.navigateTo({
+					url:item.route
+				})
+			}
 		},
 		components:{
 			Tarbar

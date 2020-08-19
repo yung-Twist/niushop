@@ -12,7 +12,7 @@
 				</view>
 			</view>
 			<view class="team-qrcode">
-				<text class="text-white cuIcon-qrcode"></text>
+				<text class="text-white cuIcon-qrcode" @click="make"></text>
 			</view>
 			<view class="team-follwer-member">
 				<view class="team-follwer-item">
@@ -145,16 +145,32 @@
 			</view>
 		</view>
 		<Tarbar :route="route"/>
+		<!-- 二维码弹窗 -->
+		<view class="cu-modal" :class="showQrcode ? 'show':''">
+			<view class="cu-dialog">
+				<view class="cu-bar bg-white justify-end">
+				  <view class="content">店铺二维码</view>
+				  <view class="action" @click="showQrcode = false">
+						<text class="cuIcon-close text-red"></text>
+				  </view>
+				</view>
+				<view class="padding-xl">
+				  <canvas canvas-id="qrcode" style="width: 220px;height: 220px;margin: auto;" />
+				</view>
+		  </view>
+		</view>
 	</view>
 </template>
 
 <script>
 	import Tarbar from '@/components/Tarbar.vue'
 	import ModuleTitle2 from '@/components/ModuleTitle2.vue'
+	import uQRCode  from '@/utils/uqrcode.js'
 	export default {
 		data() {
 			return {
 				route:null,
+				showQrcode:false,
 				toolList:[
 					{
 						id:1,
@@ -235,6 +251,23 @@
 		components:{
 			Tarbar,
 			ModuleTitle2
+		},
+		methods:{
+			make() {
+				uQRCode.make({
+					canvasId: 'qrcode',
+					componentInstance: this,
+					text: 'http://www.baidu.com',
+					size: 285,
+					margin: 10,
+					backgroundColor: '#ffffff',
+					foregroundColor: '#000000',
+					correctLevel: uQRCode.errorCorrectLevel.H,
+					success: res => {
+						this.showQrcode = true
+					}
+				})
+			}
 		},
 		onLoad() {
 			let routes = getCurrentPages();
@@ -391,6 +424,7 @@
 			background:rgba(212,226,248,1);
 			box-shadow:1upx 10upx 20upx 0upx rgba(42,108,220,0.3);
 			border-radius:30upx;
+			margin-top: 30upx;
 			overflow: hidden;
 			.tools-item{
 				display: flex;
