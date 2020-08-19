@@ -95,7 +95,7 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="scss">
 .group{
 	position: relative;
 	.groupbg{

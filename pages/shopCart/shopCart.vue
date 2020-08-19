@@ -92,7 +92,7 @@
 				]
 			};
 		},
-		onShow() {
+		onLoad() {
 			let routes = getCurrentPages();
 			this.route = routes[routes.length - 1].route
 		},
@@ -110,7 +110,7 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="scss">
 .cart-store{
 	padding: 30upx;
 	.cart-store-item{

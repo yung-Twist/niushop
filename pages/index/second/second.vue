@@ -66,7 +66,7 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="scss">
 .second{
 	position: relative;
 	.secondbg{

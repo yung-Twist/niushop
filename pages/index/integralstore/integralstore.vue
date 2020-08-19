@@ -79,7 +79,7 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="scss">
 .integralstore{
 	position: relative;
 	.integralbg{

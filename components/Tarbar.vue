@@ -3,32 +3,32 @@
 		<view class="cu-bar tabbar bg-white">
 			<view :class="['action',route == 'pages/index/index' ? 'text-blue' : 'text-gray']" @click="switchPath('/pages/index/index')">
 				<view>
-					<image v-if="route == 'pages/index/index'" src="../static/tarabr/homeA.png" mode="" style="width: 50rpx;height: 50rpx;"></image>
-					<image v-else src="../static/tarabr/home.png" mode="" style="width: 50rpx;height: 50rpx;"></image>
+					<image v-if="route == 'pages/index/index'" :src="tarbarIcon.homeA" mode="" style="width: 50rpx;height: 50rpx;"></image>
+					<image v-else :src="tarbarIcon.home" mode="" style="width: 50rpx;height: 50rpx;"></image>
 				</view>
 				<text>首页</text>
 			</view>
 			<view :class="['action',route == 'pages/category/category' ? 'text-blue' : 'text-gray']" @click="switchPath('/pages/category/category')">
 				<view>
-					<image v-if="route == 'pages/category/category'" src="../static/tarabr/productA.png" mode="" style="width: 50rpx;height: 50rpx;"></image>
-					<image v-else src="../static/tarabr/product.png" mode="" style="width: 50rpx;height: 50rpx;"></image>
+					<image v-if="route == 'pages/category/category'" :src="tarbarIcon.productA" mode="" style="width: 50rpx;height: 50rpx;"></image>
+					<image v-else :src="tarbarIcon.product" mode="" style="width: 50rpx;height: 50rpx;"></image>
 				</view>
 				<text>分类</text>
 			</view>
-			<view class="action text-gray add-action">
+			<view class="action text-gray add-action" @click="switchPath('/pages/team/team')">
 				<button class="cu-btn cuIcon-group_fill bg-blue shadow"></button>
 			</view>
 			<view :class="['action',route == 'pages/shopCart/shopCart' ? 'text-blue' : 'text-gray']" @click="switchPath('/pages/shopCart/shopCart')">
 				<view>
-					<image v-if="route == 'pages/shopCart/shopCart'" src="../static/tarabr/cartA.png" mode="" style="width: 50rpx;height: 50rpx;"></image>
-					<image v-else src="../static/tarabr/cart.png" mode="" style="width: 50rpx;height: 50rpx;"></image>
+					<image v-if="route == 'pages/shopCart/shopCart'" :src="tarbarIcon.cartA" mode="" style="width: 50rpx;height: 50rpx;"></image>
+					<image v-else :src="tarbarIcon.cart" mode="" style="width: 50rpx;height: 50rpx;"></image>
 				</view>
 				<text>购物车</text>
 			</view>
 			<view :class="['action',route == 'pages/mine/mine' ? 'text-blue' : 'text-gray']" @click="switchPath('/pages/mine/mine')">
 				<view>
-					<image v-if="route == 'pages/mine/mine'" src="../static/tarabr/mineA.png" mode="" style="width: 50rpx;height: 50rpx;"></image>
-					<image v-else src="../static/tarabr/mine.png" mode="" style="width: 50rpx;height: 50rpx;"></image>
+					<image v-if="route == 'pages/mine/mine'" :src="tarbarIcon.mineA" mode="" style="width: 50rpx;height: 50rpx;"></image>
+					<image v-else :src="tarbarIcon.mine" mode="" style="width: 50rpx;height: 50rpx;"></image>
 				</view>
 				<text>我的</text>
 			</view>
@@ -40,7 +40,16 @@
 	export default {
 		data() {
 			return {
-				// pic:require('@/static/tarbar/home.png')
+				tarbarIcon:{
+					home:require('@/static/tarbar/home.png'),
+					homeA:require('@/static/tarbar/homeA.png'),
+					product:require('@/static/tarbar/product.png'),
+					productA:require('@/static/tarbar/productA.png'),
+					cart:require('@/static/tarbar/cart.png'),
+					cartA:require('@/static/tarbar/cartA.png'),
+					mine:require('@/static/tarbar/mine.png'),
+					mineA:require('@/static/tarbar/mineA.png'),
+				}
 			};
 		},
 		props:{
@@ -66,7 +75,7 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="scss">
 .customize-tarbar{
 	position: fixed;
 	width: 100vw;

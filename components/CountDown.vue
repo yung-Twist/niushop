@@ -57,7 +57,7 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="scss">
 .CountDown{
 	text{
 		// color: #E4003C;

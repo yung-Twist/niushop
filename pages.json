@@ -21,13 +21,13 @@
         ,{
             "path" : "pages/store/store",
             "style" : {
-				"navigationBarTitleText": "店铺"
+				"navigationBarTitleText": "我的店铺"
 			}
         }
         ,{
             "path" : "pages/team/team",
             "style" : {
-				"navigationBarTitleText": "团队"
+				"navigationBarTitleText": "个人团队"
 			}
         }
         ,{
@@ -72,6 +72,24 @@
 				"navigationBarTitleText": "积分商城"
 			}
         }
+        ,{
+            "path" : "pages/store/openStore/openStore",
+            "style" : {
+				"navigationBarTitleText": "商家开店"
+			}
+        }
+        ,{
+            "path" : "pages/store/storeSetting/storeSetting",
+            "style" : {
+				"navigationBarTitleText": "店铺设置"
+			}
+        }
+        ,{
+            "path" : "pages/store/qrcode/qrcode",
+            "style" : {
+				"navigationBarTitleText": "二维码"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -90,6 +108,9 @@
 			},
 			{
 				"pagePath":"pages/category/category"
+			},
+			{
+				"pagePath":"pages/team/team"
 			},
 			{
 				"pagePath": "pages/shopCart/shopCart"

@@ -85,7 +85,7 @@
 				this.active = item.id
 			}
 		},
-		onShow() {
+		onLoad() {
 			let routes = getCurrentPages();
 			this.route = routes[routes.length - 1].route
 		},
@@ -95,7 +95,7 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="scss">
 	page{
 		background-color: #FFFFFF;
 	}

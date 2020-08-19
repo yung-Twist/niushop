@@ -98,7 +98,7 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="scss">
 .bargain{
 	position: relative;
 	.bargainbg{

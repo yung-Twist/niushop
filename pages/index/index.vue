@@ -28,12 +28,9 @@
 		
 		<!-- 推荐商品 -->
 		<view class="home-recommend">
-			<view class="recommend-tag">
-				<image src="../../static/images/tagImg.png" mode=""></image>
-				<text class="recommend-goods">推荐商品</text>
-			</view>
+			<ModuleTitle2 title="推荐商品"/>
 			<view class="recommend-product">
-				<view class="recomment-product-Item" v-for="(item, idnex) in productList" :key="index">
+				<view class="recommend-product-Item" v-for="(item, idnex) in productList" :key="index">
 					<image :src="item.imagePath" mode="" class="product-image"></image>
 					<view class="product-name">{{item.name}}</view>
 					<view class="product-info">
@@ -51,6 +48,7 @@
 
 <script>
 	import Tarbar from '@/components/Tarbar'
+	import ModuleTitle2 from '@/components/ModuleTitle2.vue'
 	export default {
 		data() {
 			return {
@@ -121,15 +119,13 @@
 				]
 			}
 		},
-		onLoad(e){
-			// uni.hideTabBar()
-		},
-		onShow() {
+		onLoad() {
 			let routes = getCurrentPages();
 			this.route = routes[routes.length - 1].route
 		},
 		components:{
-			Tarbar
+			Tarbar,
+			ModuleTitle2
 		},
 		methods: {
 			search(){
@@ -144,7 +140,7 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="scss">
 page{
 	background-color: #FFFFFF;
 }
@@ -218,30 +214,8 @@ page{
 	.home-recommend{
 		width:690upx;
 		margin-top: 30upx;
-		.recommend-tag{
-			border-radius:43upx;
-			background:rgba(42,108,220,.2);
-			position: relative;
-			height: 86upx;
-			image{
-				position: absolute;
-				width: 336upx;
-				height: 20upx;
-				left: 177upx;
-				top: 34upx;
-			}
-			.recommend-goods{
-				position: absolute;
-				left: 280upx;
-				top: 23upx;
-				font-size:33upx;
-				
-				font-weight:bold;
-				color:rgba(42,108,220,1);
-			}
-		}
 		.recommend-product{
-			.recomment-product-Item{
+			.recommend-product-Item{
 				margin-top: 30upx;
 				width:690upx;
 				padding: 67upx 80upx 30upx 67upx;
