@@ -1,6 +1,6 @@
 <template>
 	<view class="second">
-		<image src="../../../static/images/secondbg.png" mode="" class="secondbg"></image>
+		<image src="http://daiwu668.dianaikeji.com/bgimg/secondbg.png" mode="" class="secondbg"></image>
 		<view class="second-goods-list">
 			<view class="second-goods-item" v-for="(item, index) in secondList" :key="index">
 				<view class="second-countdown">

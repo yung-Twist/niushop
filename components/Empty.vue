@@ -1,6 +1,6 @@
 <template>
 	<view class="empty">
-		<image src="../static/images/empty.png" mode=""></image>
+		<image src="http://daiwu668.dianaikeji.com/bgimg/empty.png" mode=""></image>
 		<view class="emptyText">
 			{{text}}
 		</view>

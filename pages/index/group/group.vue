@@ -1,24 +1,24 @@
 <template>
 	<view class="group">
-		<image src="../../../static/images/groupbg.png" mode="" class="groupbg"></image>
+		<image src="http://daiwu668.dianaikeji.com/bgimg/groupbg.png" mode="" class="groupbg"></image>
 		<view class="group-goods-list">
 			<!-- 拼团说明 -->
 			<view class="group-instructions">
 				<view class="group-instruct-text">拼团说明</view>
 				<view class="group-instruct-wrap">
 					<view class="group-instruct-item">
-						<image src="../../../static/images/opengroup.png" mode=""></image>
+						<image src="http://daiwu668.dianaikeji.com/bgimg/opengroup.png" mode=""></image>
 						<view class="group-instruct-item-text">
 							开团/参团
 						</view>
 					</view>
 					<view class="group-instruct-item">
-						<image src="../../../static/images/order.png" mode=""></image>
+						<image src="http://daiwu668.dianaikeji.com/bgimg/order.png" mode=""></image>
 						<view class="group-instruct-item-text">
 							填写订单付款
 						</view>
 					</view><view class="group-instruct-item">
-						<image src="../../../static/images/groupfill.png" mode=""></image>
+						<image src="http://daiwu668.dianaikeji.com/bgimg/groupfill.png" mode=""></image>
 						<view class="group-instruct-item-text">
 							人满成团
 						</view>

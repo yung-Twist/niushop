@@ -1,6 +1,6 @@
 <template>
 	<view class="integralstore">
-		<image src="../../../static/images/integralbg.png" mode="" class="integralbg"></image>
+		<image src="http://daiwu668.dianaikeji.com/bgimg/integralbg.png" mode="" class="integralbg"></image>
 		<view class="integral-content">
 			<view class="integral-userInfo">
 				<view class="userInfo-detail">
@@ -17,7 +17,7 @@
 				</view>
 			</view>
 			<view class="integral-tag">
-				<image src="../../../static/images/tagImg.png" mode=""></image>
+				<image src="http://daiwu668.dianaikeji.com/bgimg/tagImg.png" mode=""></image>
 				<text class="integral-goods">积分兑换</text>
 			</view>
 			<!-- 积分商品 -->

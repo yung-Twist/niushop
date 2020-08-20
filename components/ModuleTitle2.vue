@@ -1,6 +1,6 @@
 <template>
 	<view class="module2-tag">
-		<image src="../static/images/tagImg.png" mode=""></image>
+		<image src="http://daiwu668.dianaikeji.com/bgimg/tagImg.png" mode="" class="modu2-imagebg"></image>
 		<text class="module2-goods">{{title}}</text>
 	</view>
 </template>
@@ -25,7 +25,7 @@
 		position: relative;
 		height: 86upx;
 
-		image {
+		.modu2-imagebg {
 			position: absolute;
 			width: 336upx;
 			height: 20upx;
@@ -38,7 +38,6 @@
 			left: 280upx;
 			top: 23upx;
 			font-size: 33upx;
-
 			font-weight: bold;
 			color: rgba(42, 108, 220, 1);
 		}

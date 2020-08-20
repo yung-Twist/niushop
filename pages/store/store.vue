@@ -9,43 +9,43 @@
 				<view class="store-name">张三李四的店铺</view>
 				<view class="store-member">
 					<view class="store-member-count">
-						<image src="../../static/images/member.png" mode=""></image>
+						<image src="http://daiwu668.dianaikeji.com/bgimg/member.png" mode=""></image>
 						<view class="store-num">8888</view>
 					</view>
 					<view class="store-member-count">
-						<image src="../../static/images/thumb.png" mode=""></image>
+						<image src="http://daiwu668.dianaikeji.com/bgimg/thumb.png" mode=""></image>
 						<view class="store-num">8888</view>
 					</view>
 				</view>
 			</view>
 			<view class="store-operation">
 				<view class="operation-item">
-					<image src="../../static/images/share.png" mode=""></image>
+					<image src="http://daiwu668.dianaikeji.com/bgimg/share.png" mode=""></image>
 				</view>
 				<view class="operation-item">
-					<image src="../../static/images/decoration.png" mode=""></image>
+					<image src="http://daiwu668.dianaikeji.com/bgimg/decoration.png" mode=""></image>
 				</view>
 				<view class="operation-item">
-					<image src="../../static/images/live.png" mode=""></image>
+					<image src="http://daiwu668.dianaikeji.com/bgimg/live.png" mode=""></image>
 				</view>
 			</view>
 		</view> 
 		<!-- 推荐 -->
 		<view class="store-module">
 			<view class="store-module-item">
-				<ModuleTitle title="推荐商品" imagePath="../static/images/Recommend.png" :width="646" :height="85"/>
+				<ModuleTitle title="推荐商品" imagePath="http://daiwu668.dianaikeji.com/bgimg/Recommend.png" :width="646" :height="85"/>
 				<ModuleItem imagePath="http://www.canpro.cn/uploads/products-img/img_5a21182569c69.png" name="CANPRO -黑武士" origin="厦门" material="高密度陶瓷+PP抗菌" features="全自动翻盖、一体式挂壁智能马桶" @increaseGoods="increaseGoods"/>
 			</view>
 			<view class="store-module-item">
-				<ModuleTitle title="秒杀推荐" imagePath="../static/images/Flashsale.png" :width="493" :height="85"/>
+				<ModuleTitle title="秒杀推荐" imagePath="http://daiwu668.dianaikeji.com/bgimg/Flashsale.png" :width="493" :height="85"/>
 				<ModuleItem imagePath="http://www.canpro.cn/uploads/products-img/img_5a21182569c69.png" name="CANPRO -黑武士" origin="厦门" material="高密度陶瓷+PP抗菌" features="全自动翻盖、一体式挂壁智能马桶" @increaseGoods="increaseGoods"/>
 			</view>
 			<view class="store-module-item">
-				<ModuleTitle title="砍价推荐" imagePath="../static/images/Haggle.png" :width="367" :height="110"/>
+				<ModuleTitle title="砍价推荐" imagePath="http://daiwu668.dianaikeji.com/bgimg/Haggle.png" :width="367" :height="110"/>
 				<ModuleItem imagePath="http://www.canpro.cn/uploads/products-img/img_5a21182569c69.png" name="CANPRO -黑武士" origin="厦门" material="高密度陶瓷+PP抗菌" features="全自动翻盖、一体式挂壁智能马桶" @increaseGoods="increaseGoods"/>
 			</view>
 			<view class="store-module-item">
-				<ModuleTitle title="拼团推荐" imagePath="../static/images/Groupbuying.png" :width="709" :height="110"/>
+				<ModuleTitle title="拼团推荐" imagePath="http://daiwu668.dianaikeji.com/bgimg/Groupbuying.png" :width="709" :height="110"/>
 				<ModuleItem imagePath="http://www.canpro.cn/uploads/products-img/img_5a21182569c69.png" name="CANPRO -黑武士" origin="厦门" material="高密度陶瓷+PP抗菌" features="全自动翻盖、一体式挂壁智能马桶" @increaseGoods="increaseGoods"/>
 			</view>
 		</view>
@@ -80,62 +80,62 @@
 				storeToolsItem:[
 					{
 						title:'我的店铺',
-						icon:require('@/static/images/store.png'),
+						icon:'http://daiwu668.dianaikeji.com/bgimg/store.png',
 						route:''
 					},
 					{
 						title:'店铺设置',
-						icon:require('@/static/images/setting.png'),
+						icon:'http://daiwu668.dianaikeji.com/bgimg/setting.png',
 						route:''
 					},
 					{
 						title:'二维码',
-						icon:require('@/static/images/qrcode.png'),
+						icon:'http://daiwu668.dianaikeji.com/bgimg/qrcode.png',
 						route:''
 					},
 					{
 						title:'我的订单',
-						icon:require('@/static/images/storeorder.png'),
+						icon:'http://daiwu668.dianaikeji.com/bgimg/storeorder.png',
 						route:''
 					},
 					{
 						title:'我的团队',
-						icon:require('@/static/images/storeteam.png'),
+						icon:'http://daiwu668.dianaikeji.com/bgimg/storeteam.png',
 						route:''
 					},
 					{
 						title:'我的佣金',
-						icon:require('@/static/images/money.png'),
+						icon:'http://daiwu668.dianaikeji.com/bgimg/money.png',
 						route:''
 					},
 					{
 						title:'进行中佣金',
-						icon:require('@/static/images/moneying.png'),
+						icon:'http://daiwu668.dianaikeji.com/bgimg/moneying.png',
 						route:''
 					},
 					{
 						title:'佣金提现',
-						icon:require('@/static/images/recharge.png'),
+						icon:'http://daiwu668.dianaikeji.com/bgimg/recharge.png',
 						route:''
 					},
 					{
 						title:'投诉建议',
-						icon:require('@/static/images/complaint.png'),
+						icon:'http://daiwu668.dianaikeji.com/bgimg/complaint.png',
 						route:''
 					},
 					{
 						title:'专属客服',
-						icon:require('@/static/images/service.png'),
+						icon:'http://daiwu668.dianaikeji.com/bgimg/service.png',
 						route:''
 					},
 					{
 						title:'合伙人规则',
-						icon:require('@/static/images/rule.png'),
+						icon:'http://daiwu668.dianaikeji.com/bgimg/rule.png',
 						route:''
 					},
 					{
 						title:'素材百科',
-						icon:require('@/static/images/encyclopedia.png'),
+						icon:'http://daiwu668.dianaikeji.com/bgimg/encyclopedia.png',
 						route:''
 					}
 				]
@@ -163,7 +163,8 @@ page{
 		padding: 300upx 42upx 0;
 		width: 100vw;
 		height: 849upx;
-		background:#93A4C4;
+		background:url('http://daiwu668.dianaikeji.com/bgimg/storebg.png') no-repeat;
+		background-size: 100% 100%;
 		position: relative;
 		.store-info{
 			width:666upx;

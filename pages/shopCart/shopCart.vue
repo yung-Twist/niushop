@@ -6,7 +6,7 @@
 					<view class="cart-store-header">
 						<view class="cart-store-left">
 							<checkbox class='round blue' :value="index" style="zoom:80%;"></checkbox>
-							<image src="../../static/tarabr/storeA.png" mode="" class="store-icon"></image>
+							<image src="../../static/tarbar/storeA.png" mode="" class="store-icon"></image>
 							<text class="store-name">{{item.storeName}}</text>
 						</view>
 						<view class="store-edit">编辑</view>

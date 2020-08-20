@@ -1,7 +1,7 @@
 <template>
 	<view class="openStore">
 		<view class="openStore-logo">
-			<image src="../../../static/images/logo%20.png" mode=""></image>
+			<image src="http://daiwu668.dianaikeji.com/bgimg/logo%20.png" mode=""></image>
 		</view>
 		<view class="openStore-content">
 			<view class="store-apply-info">

@@ -54,7 +54,7 @@
 				],
 				categoryProductList:[
 					{
-						imagePath:require('@/static/images/product.png'),
+						imagePath:'http://daiwu668.dianaikeji.com/bgimg/product.png',
 						title:'CANPRO -黑武士',
 						name:'全自动垃圾处理器',
 						introduction:'产品描述产品描述产品描述产品描述产品描述产品描述产品描述',
@@ -62,7 +62,7 @@
 						bgcolor:'#D4E2F8'
 					},
 					{
-						imagePath:require('@/static/images/product.png'),
+						imagePath:'http://daiwu668.dianaikeji.com/bgimg/product.png',
 						title:'CANPRO -黑武士',
 						name:'全自动垃圾处理器',
 						introduction:'产品描述产品描述产品描述产品描述产品描述产品描述产品描述',
@@ -70,7 +70,7 @@
 						bgcolor:'#F5E6E3'
 					},
 					{
-						imagePath:require('@/static/images/product.png'),
+						imagePath:'http://daiwu668.dianaikeji.com/bgimg/product.png',
 						title:'CANPRO -黑武士',
 						name:'全自动垃圾处理器',
 						introduction:'产品描述产品描述产品描述产品描述产品描述产品描述产品描述',

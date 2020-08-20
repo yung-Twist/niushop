@@ -1,6 +1,6 @@
 <template>
 	<view class="bargain">
-		<image src="../../../static/images/bargainbg.png" mode="" class="bargainbg"></image>
+		<image src="http://daiwu668.dianaikeji.com/bgimg/bargainbg.png" mode="" class="bargainbg"></image>
 		<view class="bargain-goods-list">
 			<!-- 砍价说明 -->
 			<view class="bargain-instructions">

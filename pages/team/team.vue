@@ -175,73 +175,73 @@
 					{
 						id:1,
 						name:'我的店铺',
-						iconPath:require('@/static/images/store.png'),
+						iconPath:'http://daiwu668.dianaikeji.com/bgimg/store.png',
 						bgColor:'#94B5ED'
 					},
 					{
 						id:2,
 						name:'店铺设置',
-						iconPath:require('@/static/images/setting.png'),
+						iconPath:'http://daiwu668.dianaikeji.com/bgimg/setting.png',
 						bgColor:'#D4E2F8'
 					},
 					{
 						id:3,
 						name:'二维码',
-						iconPath:require('@/static/images/qrcode.png'),
+						iconPath:'http://daiwu668.dianaikeji.com/bgimg/qrcode.png',
 						bgColor:'#D5D6F0'
 					},
 					{
 						id:4,
 						name:'我的订单',
-						iconPath:require('@/static/images/storeorder.png'),
+						iconPath:'http://daiwu668.dianaikeji.com/bgimg/storeorder.png',
 						bgColor:'#D4E2F8'
 					},
 					{
 						id:5,
 						name:'我的团队',
-						iconPath:require('@/static/images/storeteam.png'),
+						iconPath:'http://daiwu668.dianaikeji.com/bgimg/storeteam.png',
 						bgColor:'#94B5ED'
 					},
 					{
 						id:6,
 						name:'我的佣金',
-						iconPath:require('@/static/images/money.png'),
+						iconPath:'http://daiwu668.dianaikeji.com/bgimg/money.png',
 						bgColor:'#F5E6E3'
 					},
 					{
 						id:7,
 						name:'进行中佣金',
-						iconPath:require('@/static/images/moneying.png'),
+						iconPath:'http://daiwu668.dianaikeji.com/bgimg/moneying.png',
 						bgColor:'#D5D6F0'
 					},
 					{
 						id:8,
 						name:'佣金提现',
-						iconPath:require('@/static/images/recharge.png'),
+						iconPath:'http://daiwu668.dianaikeji.com/bgimg/recharge.png',
 						bgColor:'#D4E2F8'
 					},
 					{
 						id:9,
 						name:'投诉建议',
-						iconPath:require('@/static/images/complaint.png'),
+						iconPath:'http://daiwu668.dianaikeji.com/bgimg/complaint.png',
 						bgColor:'#D5D6F0'
 					},
 					{
 						id:10,
 						name:'专属客服',
-						iconPath:require('@/static/images/service.png'),
+						iconPath:'http://daiwu668.dianaikeji.com/bgimg/service.png',
 						bgColor:'#D4E2F8'
 					},
 					{
 						id:11,
 						name:'合伙人规则',
-						iconPath:require('@/static/images/rule.png'),
+						iconPath:'http://daiwu668.dianaikeji.com/bgimg/rule.png',
 						bgColor:'#94B5ED'
 					},
 					{
 						id:12,
 						name:'素材百科',
-						iconPath:require('@/static/images/encyclopedia.png'),
+						iconPath:'http://daiwu668.dianaikeji.com/bgimg/encyclopedia.png',
 						bgColor:'#D4E2F8'
 					}
 					

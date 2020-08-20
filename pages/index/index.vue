@@ -4,7 +4,7 @@
 		<!-- 搜索 -->
 		<view class="home-search">
 			<view class="searchInput">
-				<image src="../../static/images/search.png"></image>
+				<image src="http://daiwu668.dianaikeji.com/bgimg/search.png"></image>
 				<input class="uni-input" confirm-type="search" v-model="searchWord" @confirm="search" placeholder-class="placeholderStyle" placeholder="请输入你想要的内容"/>
 			</view>
 		</view>
@@ -30,7 +30,7 @@
 		<view class="home-recommend">
 			<ModuleTitle2 title="推荐商品"/>
 			<view class="recommend-product">
-				<view class="recommend-product-Item" v-for="(item, idnex) in productList" :key="index">
+				<view class="recommend-product-Item" v-for="(item, index) in productList" :key="index" @click="toGoodsDetail(item)">
 					<image :src="item.imagePath" mode="" class="product-image"></image>
 					<view class="product-name">{{item.name}}</view>
 					<view class="product-info">
@@ -76,22 +76,22 @@
 					{
 						title:'秒杀',
 						route:'/pages/index/second/second',
-						icon:require('@/static/images/second.png')
+						icon:'http://daiwu668.dianaikeji.com/bgimg/second.png'
 					},
 					{
 						title:'砍价',
 						route:'/pages/index/bargain/bargain',
-						icon:require('@/static/images/bargain.png')
+						icon:'http://daiwu668.dianaikeji.com/bgimg/bargain.png'
 					},
 					{
 						title:'拼团',
 						route:'/pages/index/group/group',
-						icon:require('@/static/images/group.png')
+						icon:'http://daiwu668.dianaikeji.com/bgimg/group.png'
 					},
 					{
 						title:'积分商城',
 						route:'/pages/index/integralstore/integralstore',
-						icon:require('@/static/images/integral.png')
+						icon:'http://daiwu668.dianaikeji.com/bgimg/integral.png'
 					}
 				],
 				productList:[
@@ -103,7 +103,7 @@
 						features:'全自动翻盖、一体式挂壁智能马桶'
 					},
 					{
-						imagePath:'http://www.canpro.cn/uploads/products-img/img_5a21182569c69.png',
+						imagePath:'http://www.canpro.cn/uploads/products-img/img_5a24b92034743.png',
 						name:'CANPRO -黑武士',
 						origin:'厦门',
 						material:' 高密度陶瓷+PP抗菌',
@@ -134,6 +134,12 @@
 			toItemPath(item){
 				uni.navigateTo({
 					url:item.route
+				})
+			},
+			// 前往商品详情
+			toGoodsDetail(item){
+				uni.navigateTo({
+					url:'/pages/goodsDetail/goodsDetail'
 				})
 			}
 		}

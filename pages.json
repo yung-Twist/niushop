@@ -108,6 +108,37 @@
 				"navigationBarTitleText": "我的收藏"
 			}
         }
+        ,{
+            "path" : "pages/mine/order/order",
+            "style" : {
+				"navigationBarTitleText": "订单列表"
+			}
+        }
+        ,{
+            "path" : "pages/mine/encyclopedia/encyclopedia",
+            "style" : {
+				"navigationBarTitleText": "素材百科"
+			}
+        }
+        ,{
+            "path" : "pages/store/poster/poster",
+            "style" : {
+				"navigationBarTitleText": "海报生成"
+			}
+        }
+        ,{
+            "path" : "pages/goodsDetail/goodsDetail",
+            "style" : {
+				"navigationBarTitleText": "商品详情",
+				"navigationBarBackgroundColor":"#C0D4F4"
+			}
+        }
+        ,{
+            "path" : "pages/mine/newsDetail/newsDetail",
+            "style" : {
+				"navigationBarTitleText": "新闻详情"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

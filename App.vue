@@ -1,5 +1,7 @@
 <script>
 	export default {
+		globalData: {  
+		},
 		onLaunch: function() {
 			uni.hideTabBar()
 		},
@@ -20,7 +22,7 @@
 		background-color: #F2F2F2;
 		font-family:Microsoft YaHei;
 		font-weight:400;
-		color:rgba(52,52,52,1);
+		color:#343434;
 		padding-bottom: calc(var(--window-bottom) + 126upx);
 	}
 </style>
