@@ -58,6 +58,10 @@ page{
 			width: 630upx;
 			height: 470upx;
 			margin: 30upx 0;
+			image{
+				width: 100%;
+				height: 100%;
+			}
 		}
 		.poster-intro{
 			text-indent: 2em;

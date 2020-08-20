@@ -13,7 +13,8 @@
 				内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
 			</view>
 			<view class="newsDetail-btn">
-				<button class="cu-btn round btnstyle ">海报生成</button>
+				<button class="cu-btn round btnstyle "
+				@click="createPoster">海报生成</button>
 			</view>
 		</view>
 	</view>
@@ -25,6 +26,13 @@
 			return {
 				
 			};
+		},
+		methods:{
+			createPoster(){
+				uni.navigateTo({
+					url:'/pages/store/poster/poster'
+				})
+			}
 		}
 	}
 </script>
@@ -45,7 +53,6 @@
 		position: absolute;
 		top: 490upx;
 		left: 30upx;
-		padding-bottom: 30upx;
 		.newsDetail-Info{
 			width: 100%;
 			height: 222upx;
@@ -83,7 +90,7 @@
 		.newsDetail-btn{
 			text-align: center;
 			position: absolute;
-			bottom: -25upx;
+			bottom: -45upx;
 			left: 0;
 			right: 0;
 			margin: auto;

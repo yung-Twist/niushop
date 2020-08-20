@@ -139,6 +139,12 @@
 				"navigationBarTitleText": "新闻详情"
 			}
         }
+        ,{
+            "path" : "pages/module/module",
+            "style" : {
+				"navigationBarTitleText": "模块选择"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
