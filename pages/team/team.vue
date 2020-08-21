@@ -138,7 +138,7 @@
 			</view>
 			<ModuleTitle2 title="袋客工具"/>
 			<view class="tools-list">
-				<view class="tools-item" v-for="(item, index) in toolList" :key="index" :style="{background:item.bgColor}">
+				<view class="tools-item" v-for="(item, index) in toolList" :key="index" :style="{background:item.bgColor}" @click="toToolsPage(item)">
 					<image :src="item.iconPath" mode=""></image>
 					<text>{{item.name}}</text>
 				</view>
@@ -176,73 +176,85 @@
 						id:1,
 						name:'我的店铺',
 						iconPath:'http://daiwu668.dianaikeji.com/bgimg/store.png',
-						bgColor:'#94B5ED'
+						bgColor:'#94B5ED',
+						route:'/pages/team/commissioning/commissioning'
 					},
 					{
 						id:2,
 						name:'店铺设置',
 						iconPath:'http://daiwu668.dianaikeji.com/bgimg/setting.png',
-						bgColor:'#D4E2F8'
+						bgColor:'#D4E2F8',
+						route:'/pages/team/commissioning/commissioning'
 					},
 					{
 						id:3,
 						name:'二维码',
 						iconPath:'http://daiwu668.dianaikeji.com/bgimg/qrcode.png',
-						bgColor:'#D5D6F0'
+						bgColor:'#D5D6F0',
+						route:'/pages/team/commissioning/commissioning'
 					},
 					{
 						id:4,
 						name:'我的订单',
 						iconPath:'http://daiwu668.dianaikeji.com/bgimg/storeorder.png',
-						bgColor:'#D4E2F8'
+						bgColor:'#D4E2F8',
+						route:'/pages/team/commissioning/commissioning'
 					},
 					{
 						id:5,
 						name:'我的团队',
 						iconPath:'http://daiwu668.dianaikeji.com/bgimg/storeteam.png',
-						bgColor:'#94B5ED'
+						bgColor:'#94B5ED',
+						route:'/pages/team/myTeam/myTeam'
 					},
 					{
 						id:6,
 						name:'我的佣金',
 						iconPath:'http://daiwu668.dianaikeji.com/bgimg/money.png',
-						bgColor:'#F5E6E3'
+						bgColor:'#F5E6E3',
+						route:'/pages/team/myCommison/myCommison'
 					},
 					{
 						id:7,
 						name:'进行中佣金',
 						iconPath:'http://daiwu668.dianaikeji.com/bgimg/moneying.png',
-						bgColor:'#D5D6F0'
+						bgColor:'#D5D6F0',
+						route:'/pages/team/commissioning/commissioning'
 					},
 					{
 						id:8,
 						name:'佣金提现',
 						iconPath:'http://daiwu668.dianaikeji.com/bgimg/recharge.png',
-						bgColor:'#D4E2F8'
+						bgColor:'#D4E2F8',
+						route:'/pages/team/commissioning/commissioning'
 					},
 					{
 						id:9,
 						name:'投诉建议',
 						iconPath:'http://daiwu668.dianaikeji.com/bgimg/complaint.png',
-						bgColor:'#D5D6F0'
+						bgColor:'#D5D6F0',
+						route:'/pages/team/commissioning/commissioning'
 					},
 					{
 						id:10,
 						name:'专属客服',
 						iconPath:'http://daiwu668.dianaikeji.com/bgimg/service.png',
-						bgColor:'#D4E2F8'
+						bgColor:'#D4E2F8',
+						route:'/pages/team/commissioning/commissioning'
 					},
 					{
 						id:11,
 						name:'合伙人规则',
 						iconPath:'http://daiwu668.dianaikeji.com/bgimg/rule.png',
-						bgColor:'#94B5ED'
+						bgColor:'#94B5ED',
+						route:'/pages/team/commissioning/commissioning'
 					},
 					{
 						id:12,
 						name:'素材百科',
 						iconPath:'http://daiwu668.dianaikeji.com/bgimg/encyclopedia.png',
-						bgColor:'#D4E2F8'
+						bgColor:'#D4E2F8',
+						route:'/pages/team/commissioning/commissioning'
 					}
 					
 				]
@@ -253,6 +265,7 @@
 			ModuleTitle2
 		},
 		methods:{
+			// 二维码
 			make() {
 				uQRCode.make({
 					canvasId: 'qrcode',
@@ -266,6 +279,12 @@
 					success: res => {
 						this.showQrcode = true
 					}
+				})
+			},
+			// 跳转到工具页
+			toToolsPage(item){
+				uni.navigateTo({
+					url:item.route
 				})
 			}
 		},

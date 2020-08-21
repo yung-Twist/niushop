@@ -144,6 +144,41 @@
             "style" : {
 				"navigationBarTitleText": "模块选择"
 			}
+		},{
+            "path" : "pages/store/offerShare/offerShare",
+            "style" : {
+				"navigationBarTitleText": "报价分享"
+			}
+        }
+        ,{
+            "path" : "pages/team/commissioning/commissioning",
+            "style" : {
+				"navigationBarTitleText": "进行中佣金"
+			}
+        }
+        ,{
+            "path" : "pages/mine/sign/sign",
+            "style" : {
+				"navigationBarTitleText": "签到"
+			}
+        }
+        ,{
+            "path" : "pages/team/myTeam/myTeam",
+            "style" : {
+				"navigationBarTitleText": "我的团队"
+			}
+        }
+        ,{
+            "path" : "pages/team/myCommison/myCommison",
+            "style" : {
+				"navigationBarTitleText": "我的佣金"
+			}
+        }
+        ,{
+            "path" : "pages/team/recharge/recharge",
+            "style" : {
+				"navigationBarTitleText": "佣金提现"
+			}
         }
     ],
 	"globalStyle": {

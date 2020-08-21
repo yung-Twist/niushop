@@ -111,7 +111,7 @@
 						name:'签到',
 						iconPath:'http://daiwu668.dianaikeji.com/bgimg/sign.png',
 						bgColor:'#94B5ED',
-						route:'/pages/mine/addressList/addressList'
+						route:'/pages/mine/sign/sign'
 					},
 					{
 						id:2,
