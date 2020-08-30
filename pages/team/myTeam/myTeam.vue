@@ -5,7 +5,7 @@
 			 @click="changeType(index)">{{item.title}}</view>
 		</view>
 		<view class="myTeam-wrap">
-			<view class="myTeam-item" v-for="(item, index) in dataList">
+			<view class="myTeam-item" v-for="(item, index) in dataList" :key="index">
 				<image class="myTeam-avatar" :src="item.avatar"></image>
 				<view class="myTeam-right">
 					<view class="myTeam-phone">{{item.phone}}<view class='cu-tag round sm line-blue margin-left'>推广员</view></view>

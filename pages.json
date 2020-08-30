@@ -180,6 +180,12 @@
 				"navigationBarTitleText": "佣金提现"
 			}
         }
+        ,{
+            "path" : "pages/index/recommendManage/recommendManage",
+            "style" : {
+				"navigationBarTitleText": "推荐商品管理"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
